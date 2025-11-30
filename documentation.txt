@@ -1,0 +1,13 @@
+We’ll build a simple ML pipeline that:
+
+1.Takes email text (subject + body)
+
+2.Converts it to TF-IDF features
+
+3.Trains a classifier (Logistic Regression)
+
+4.Extracts important keywords for predictions
+
+5.Server loads the model + vectorizer
+
+6.API returns spam score + suspicious keywords

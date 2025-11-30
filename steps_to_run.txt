@@ -1,0 +1,22 @@
+
+1.Install all the dependencies.
+>>pip3 install -r requirements.txt
+
+2.Train the model and save it as .pkl file
+>>python train_model.py
+
+This generates:
+-vectorizer.pkl
+-spam_model.pkl
+
+3.Run the API server that loads the model, vectorize the email data, evaluate it and returns the response
+>>uvicorn main:app --reload --port 8000
+
+POST → /analyze-email
+Input:
+{
+  "subject": "Urgent! Update your password",
+  "body": "Your account has been compromised, click the link."
+}
+
+
